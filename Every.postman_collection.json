@@ -1,0 +1,248 @@
+{
+	"info": {
+		"_postman_id": "42484932-2cdf-4b21-8cb2-fbf06b9d9d7a",
+		"name": "Every",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "514951"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"john.doe\",\r\n    \"password\": \"senha\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/auth/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTAxVDAwOjI2OjAxLjMzN1oiLCJpYXQiOjE2NjQ2NTEyOTcsImV4cCI6MTY2NDY1NDg5N30.BKYwezKoM2KjR--mOuxeYvf0mAU8ZDMoANhWKN1QLX8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First task\",\r\n    \"description\": \"First task description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Auth Profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsImlhdCI6MTY2NDY0NzU2NiwiZXhwIjoxNjY0NjUxMTY2fQ.tgx6SU9PGbRpGVe5X4lEc3TwW5msdJTbN3nmTp49t4Q",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/auth/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Tasks",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTAxVDAwOjI2OjAxLjMzN1oiLCJpYXQiOjE2NjQ2NTEyOTcsImV4cCI6MTY2NDY1NDg5N30.BKYwezKoM2KjR--mOuxeYvf0mAU8ZDMoANhWKN1QLX8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/task",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task by ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTAxVDAwOjI2OjAxLjMzN1oiLCJpYXQiOjE2NjQ2NTEyOTcsImV4cCI6MTY2NDY1NDg5N30.BKYwezKoM2KjR--mOuxeYvf0mAU8ZDMoANhWKN1QLX8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/task/633892d1811a775f070a6f26",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"633892d1811a775f070a6f26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTAxVDAwOjI2OjAxLjMzN1oiLCJpYXQiOjE2NjQ2NTEyOTcsImV4cCI6MTY2NDY1NDg5N30.BKYwezKoM2KjR--mOuxeYvf0mAU8ZDMoANhWKN1QLX8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First task updated\",\r\n    \"description\": \"First task description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task/633892d1811a775f070a6f26",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"633892d1811a775f070a6f26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Archive Task",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzc3NzgzMmM5ZWFmMTg3NzIwZWZkYSIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTAxVDAwOjI2OjAxLjMzN1oiLCJpYXQiOjE2NjQ2NTEyOTcsImV4cCI6MTY2NDY1NDg5N30.BKYwezKoM2KjR--mOuxeYvf0mAU8ZDMoANhWKN1QLX8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First task updated\",\r\n    \"description\": \"First task description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task/633892d1811a775f070a6f26",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"633892d1811a775f070a6f26"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Task next status",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzM2NkN2U1NTUyNmNiNWVjMzFkNjAxNCIsIm5hbWUiOiJKb2huIERvZSIsImVtYWlsIjoiam9obi5kb2VAZG9tYWluLmNvbSIsInVzZXJuYW1lIjoiam9obi5kb2UiLCJjcmVhdGVkQXQiOiIyMDIyLTEwLTA1VDAxOjAzOjMzLjc2N1oiLCJpYXQiOjE2NjQ5MzI0ODAsImV4cCI6MTY2NDkzNjA4MH0.Podvcnwi9IDVimpy5m0Knsp96eYG5LI9jdxEuV9mUT8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"First task updated\",\r\n    \"description\": \"First task description\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/task/633cd81c93ee0d87bc358d85/next-status",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"task",
+						"633cd81c93ee0d87bc358d85",
+						"next-status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
